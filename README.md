@@ -13,12 +13,12 @@ Files
 Instructions
 ------------
 
-1) Copy all three files to the same directory on your machine.
-2) Add your hosts in the `hosts` array in `hostmonconfig.cfg`.
-3) Add your email recipients in the `recipients` string in `hostmonconfig.cfg`.
-4) Run `chmod u+x ./hostmon.sh` to make the script executable.
-5) Run `./hostmon.sh`.
-6) Maybe attach it to a cron job and amaze your boss when you fix dead hosts before he even knows they're down.
+1. Copy all three files to the same directory on your machine.
+2. Add your hosts in the `hosts` array in `hostmonconfig.cfg`.
+3. Add your email recipients in the `recipients` string in `hostmonconfig.cfg`.
+4. Run `chmod u+x ./hostmon.sh` to make the script executable.
+5. Run `./hostmon.sh`.
+6. Maybe attach it to a cron job and amaze your boss when you fix dead hosts before he even knows they're down.
 
 Caveat
 ------
