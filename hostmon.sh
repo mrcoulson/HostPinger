@@ -15,7 +15,7 @@ function getStatus {
 		# Add host.
 		status="$status \t $i"
 		# Create count and set to results of ping piped to grep piped to line count.
-		count=$(ping -c 1 $i | grep icmp* | wc -l)
+		count=$(ping -c $pings $i | grep icmp* | wc -l)
 		# If there are no lines (no returned pings)...
 		if [[ $count -eq 0 ]]
 		then
@@ -25,7 +25,7 @@ function getStatus {
 			status="$status \t Alive"
 		fi
 		# Echo concatenated status txt to file.
-		echo -e $status >> hostmonresult-tabs.txt
+		echo -e $status >> hostmonlog.txt
 	done
 }
 
